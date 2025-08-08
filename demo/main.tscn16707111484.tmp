@@ -11,43 +11,43 @@
 [ext_resource type="Texture2D" uid="uid://byu8dy7lfs53q" path="res://assets/Cat-1/Cat-1-Sleeping2.png" id="9_4c57u"]
 [ext_resource type="Texture2D" uid="uid://dxaj8qrwolxn" path="res://assets/Cat-1/Cat-1-Stretching.png" id="10_efxa6"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_4c57u"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_0xm2m"]
 atlas = ExtResource("2_0xm2m")
 region = Rect2(0, 0, 50, 50)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_efxa6"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_h2yge"]
 atlas = ExtResource("2_0xm2m")
 region = Rect2(50, 0, 50, 50)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_hrvbo"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_1bvp3"]
 atlas = ExtResource("2_0xm2m")
 region = Rect2(100, 0, 50, 50)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_uypp3"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_lquwl"]
 atlas = ExtResource("2_0xm2m")
 region = Rect2(150, 0, 50, 50)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_blkrb"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_7mycd"]
 atlas = ExtResource("2_0xm2m")
 region = Rect2(200, 0, 50, 50)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_abqjc"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_272bh"]
 atlas = ExtResource("2_0xm2m")
 region = Rect2(250, 0, 50, 50)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_6iyjs"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_5vw27"]
 atlas = ExtResource("2_0xm2m")
 region = Rect2(300, 0, 50, 50)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_4w656"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_kek77"]
 atlas = ExtResource("2_0xm2m")
 region = Rect2(350, 0, 50, 50)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_e71vb"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_4c57u"]
 atlas = ExtResource("2_0xm2m")
 region = Rect2(400, 0, 50, 50)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_rnkwl"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_efxa6"]
 atlas = ExtResource("2_0xm2m")
 region = Rect2(450, 0, 50, 50)
 
@@ -207,34 +207,34 @@ region = Rect2(600, 0, 50, 50)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_0xm2m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h2yge")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1bvp3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lquwl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7mycd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_272bh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5vw27")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kek77")
+}, {
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_4c57u")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_efxa6")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hrvbo")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_uypp3")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_blkrb")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_abqjc")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_6iyjs")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4w656")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_e71vb")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_rnkwl")
 }],
 "loop": true,
 "name": &"Idle",
@@ -286,7 +286,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_htxhm")
 }],
 "loop": true,
-"name": &"Lick",
+"name": &"Licl",
 "speed": 5.0
 }, {
 "frames": [{
@@ -399,9 +399,7 @@ animations = [{
 [sub_resource type="GDScript" id="GDScript_1bvp3"]
 
 [node name="main" type="Node2D"]
-position = Vector2(-342, -43)
 script = ExtResource("1_1bvp3")
-metadata/_edit_lock_ = true
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -410,19 +408,16 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="ColorRect" type="ColorRect" parent="Control"]
-custom_minimum_size = Vector2(1000, 20)
 layout_mode = 0
-offset_left = 369.231
-offset_top = -664.835
-offset_right = 1449.23
-offset_bottom = 1335.16
+offset_right = 1152.0
+offset_bottom = 642.0
 color = Color(1, 0.717647, 0.772549, 1)
 script = ExtResource("3_h2yge")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(705, 490)
-scale = Vector2(9, 9)
+position = Vector2(555, 325)
+scale = Vector2(5, 5)
 sprite_frames = SubResource("SpriteFrames_dg77c")
-animation = &"Stretch"
+animation = &"Sleeping2"
 script = SubResource("GDScript_1bvp3")
