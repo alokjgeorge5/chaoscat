@@ -1,13 +1,11 @@
 extends Sprite2D
 
-var speed = 100
-var direction = Vector2.ZERO
-var change_time = 0.5
-var time_passed = 0.0
+# Speed in pixels per second
+var speed: float = 200.0
 
-func _process(delta):
-	time_passed += delta
-	if time_passed > change_time:
-		direction = Vector2(randf_range(-1, 1), randf_range(-1, 1)).normalized()
-		time_passed = 0
-	position += direction * speed * delta
+func _process(delta: float) -> void:
+	var mouse_pos = get_global_mouse_position()
+	var direction = (mouse_pos - global_position).normalized()
+	
+	# Move towards the cursor smoothly
+	global_position += direction * speed * delta

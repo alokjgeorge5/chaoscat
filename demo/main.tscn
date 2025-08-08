@@ -1,11 +1,26 @@
-[gd_scene load_steps=3 format=3 uid="uid://cridtfhpt2i7f"]
+[gd_scene load_steps=4 format=3 uid="uid://cridtfhpt2i7f"]
 
-[ext_resource type="Texture2D" uid="uid://ooa5foqyegvn" path="res://assets/cat.jpg" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://b0v1f0ve3qccx" path="res://assets/cat.png" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://dh28e78dg3keq" path="res://sprite_2d.gd" id="2_h2yge"]
+[ext_resource type="Script" uid="uid://b10ekwdh3ikmv" path="res://color_rect.gd" id="3_h2yge"]
 
 [node name="main" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 1
 position = Vector2(635, 254)
 texture = ExtResource("1_0xm2m")
 script = ExtResource("2_h2yge")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 642.0
+color = Color(1, 0.717647, 0.772549, 1)
+script = ExtResource("3_h2yge")
